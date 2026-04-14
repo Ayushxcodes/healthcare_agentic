@@ -20,6 +20,9 @@ export default function Sidebar() {
           <li>
             <Link href="/dashboard/patients/new" className="text-blue-600 hover:underline">Register Patient</Link>
           </li>
+          <li>
+            <Link href="/dashboard/calendar" className="text-blue-600 hover:underline">Calendar</Link>
+          </li>
         </ul>
       </nav>
     </aside>
