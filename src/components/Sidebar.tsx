@@ -26,6 +26,9 @@ export default function Sidebar() {
           <li>
             <Link href="/dashboard/appointments/new" className="text-blue-600 hover:underline">New Appointment</Link>
           </li>
+          <li>
+            <Link href="/dashboard/chat" className="text-blue-600 hover:underline">Chat</Link>
+          </li>
         </ul>
       </nav>
     </aside>
