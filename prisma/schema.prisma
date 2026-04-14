@@ -32,7 +32,24 @@ model Doctor {
   email      String?
   createdAt  DateTime @default(now())
 
+  patients   Patient[]
+
   clinic     Clinic   @relation(fields: [clinicId], references: [id], onDelete: Cascade)
 
   @@index([clinicId])
+}
+
+model Patient {
+  id              String   @id @default(cuid())
+  doctorId        String
+  firstName       String
+  lastName        String
+  phone           String?
+  email           String?
+  appointmentDate DateTime
+  createdAt       DateTime @default(now())
+
+  doctor          Doctor   @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+
+  @@index([doctorId])
 }

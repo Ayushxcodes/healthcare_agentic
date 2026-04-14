@@ -14,6 +14,12 @@ export default function Sidebar() {
           <li>
             <Link href="/dashboard/doctors" className="text-blue-600 hover:underline">All Doctors</Link>
           </li>
+          <li>
+            <Link href="/dashboard/patients" className="text-blue-600 hover:underline">All Patients</Link>
+          </li>
+          <li>
+            <Link href="/dashboard/patients/new" className="text-blue-600 hover:underline">Register Patient</Link>
+          </li>
         </ul>
       </nav>
     </aside>
